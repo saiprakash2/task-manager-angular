@@ -1,0 +1,70 @@
+//This is where put global styles and change variables values
+
+//import font Lato and nunito
+@import url();
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+// Use Font Awesome icons in your styles
+.element {
+  font-family: 'Font Awesome 5 Free'; // For Font Awesome 5 icons
+  // OR
+  // font-family: 'Font Awesome 6 Free'; // For Font Awesome 6 icons
+  // OR
+  // font-family: 'Font Awesome 6 Pro'; // For Font Awesome 6 Pro icons
+
+  &:before {
+    content: '\f007'; // Unicode for the desired Font Awesome icon
+  }
+}
+
+$turquoise:#44ddd0;
+$green:#27d7a1;
+$light-green:#45f69e;
+$dark-green:rgb(0,100,80);
+$light: #f8f8f8;
+
+//Update Bulma's global variables
+$family-sans-serif: "Nunito",sans-serif;
+$primary: $green;
+
+$link: $light-green;
+
+//Update Bulma's global components
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+html {
+    background: linear-gradient(to right top, $turquoise, $green);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-box {
+    min-height: 200px;
+    width: 100%;
+    max-width: 580px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.title {
+    font-size: 22px;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+}
